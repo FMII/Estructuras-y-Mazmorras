@@ -233,7 +233,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Brown_Column_0
+      name: Caves_Props_0
       rect:
         serializedVersion: 2
         x: 9
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61eeb84385562f120800000000000000
-      internalID: 2446128977128713750
+      spriteID: 8460e005c589bc34eb63f2c5f2df51a3
+      internalID: -914872771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Column_1
+      name: Caves_Props_1
       rect:
         serializedVersion: 2
         x: 24
@@ -270,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbac382aa68600620800000000000000
-      internalID: 2738303380643629756
+      spriteID: 3946b01916372d64f852bee35278e213
+      internalID: 1408923768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Column_2
+      name: Caves_Props_2
       rect:
         serializedVersion: 2
         x: 42
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64ac8cce1bb8c3680800000000000000
-      internalID: -8773984377726514618
+      spriteID: eec5513562bf04946bab4687e280957e
+      internalID: 1380025632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Column_3
+      name: Caves_Props_3
       rect:
         serializedVersion: 2
         x: 67
@@ -314,14 +314,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c55586fd5c653c4c0800000000000000
-      internalID: -4268472613960395428
+      spriteID: 104254c24d6b3814eb1bcf93a1cacb09
+      internalID: 1646718437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Column_0
+      name: Caves_Props_4
       rect:
         serializedVersion: 2
         x: 89
@@ -336,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ac011e1bb9c37dd0800000000000000
-      internalID: -2489424363505251165
+      spriteID: ca6f78fdad8cb28439f6b1fa841bfd34
+      internalID: 1032721233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Column_1
+      name: Caves_Props_5
       rect:
         serializedVersion: 2
         x: 104
@@ -358,14 +358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f806eb813ee6cbfa0800000000000000
-      internalID: -5783625899798798193
+      spriteID: 582d0f89a26e2e04dac7500fd403d27f
+      internalID: 599056663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Column_2
+      name: Caves_Props_6
       rect:
         serializedVersion: 2
         x: 122
@@ -380,14 +380,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1439066d937ceb1f0800000000000000
-      internalID: -1027164613770177727
+      spriteID: 84df81cc5890142408883fb9acb68daf
+      internalID: -567301889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Column_3
+      name: Caves_Props_7
       rect:
         serializedVersion: 2
         x: 147
@@ -402,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acaed8207009a8190800000000000000
-      internalID: -7959391031641904438
+      spriteID: 6c51ee3834b37a34fb09addd967c42d7
+      internalID: 1097841335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Large_Stalagmite_0
+      name: Caves_Props_8
       rect:
         serializedVersion: 2
         x: 11
@@ -424,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0c7b5d5b4693ec00800000000000000
-      internalID: 928751198601444362
+      spriteID: f80e67ad5ccccf44c83cbfed56195762
+      internalID: -181044033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Large_Stalagmite_1
+      name: Caves_Props_9
       rect:
         serializedVersion: 2
         x: 35
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd148936294df2720800000000000000
-      internalID: 2823709216585826781
+      spriteID: 97a53d27215388d4ebadcfe9197c080b
+      internalID: 23645664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Large_Stalagmite_2
+      name: Caves_Props_10
       rect:
         serializedVersion: 2
         x: 57
@@ -468,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 552f3c1718b1b7480800000000000000
-      internalID: -8900489995794255275
+      spriteID: 4e93eb3042c5d4441ba66ac6e65d2a68
+      internalID: 864328099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Large_Stalagmite_0
+      name: Caves_Props_11
       rect:
         serializedVersion: 2
         x: 91
@@ -490,14 +490,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b29993e8b6011ebf0800000000000000
-      internalID: -296938046296057557
+      spriteID: c0b28639f6883c24ab2d1b4e080b9b10
+      internalID: -598070135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Large_Stalagmite_1
+      name: Caves_Props_12
       rect:
         serializedVersion: 2
         x: 115
@@ -512,14 +512,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f5c81c5fb16da090800000000000000
-      internalID: -8021647886765210120
+      spriteID: 437c2b8bf728ed047b08f475c9701043
+      internalID: 189972884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Large_Stalagmite_2
+      name: Caves_Props_13
       rect:
         serializedVersion: 2
         x: 137
@@ -534,14 +534,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd6e83aa3ab00c900800000000000000
-      internalID: 702574339433227999
+      spriteID: 91603107da485db408c19701bb8a6c08
+      internalID: -980568173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Medium_Stalagmite_0
+      name: Caves_Props_14
       rect:
         serializedVersion: 2
         x: 8
@@ -556,14 +556,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5b9c4f42718e8d00800000000000000
-      internalID: 976860497142651742
+      spriteID: 88e0ca833e8318b4b9619a05f5228c36
+      internalID: -950422821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Medium_Stalagmite_1
+      name: Caves_Props_15
       rect:
         serializedVersion: 2
         x: 25
@@ -578,14 +578,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0ec94ef3d7d85930800000000000000
-      internalID: 4132289963616751118
+      spriteID: 01e6cc8c905d7c44f83872c149431f6f
+      internalID: -1274405098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Medium_Stalagmite_2
+      name: Caves_Props_16
       rect:
         serializedVersion: 2
         x: 41
@@ -600,14 +600,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dba996eb1780ef20800000000000000
-      internalID: 3449905868468497368
+      spriteID: 67f83f83f21e57a4dad82f35c0180c05
+      internalID: 1958137084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Medium_Stalagmite_0
+      name: Caves_Props_17
       rect:
         serializedVersion: 2
         x: 88
@@ -622,20 +622,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54396d354127865d0800000000000000
-      internalID: -3069077714421509307
+      spriteID: d489873e6d061af4c99e90affd3f2385
+      internalID: 1661639356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Medium_Stalagmite_1
+      name: Caves_Props_18
       rect:
         serializedVersion: 2
         x: 105
-        y: 82
+        y: 74
         width: 7
-        height: 11
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -644,14 +644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88959e58061b654c0800000000000000
-      internalID: -4299053766156920440
+      spriteID: eeba9894044362347b6f96180e366a76
+      internalID: -1769947211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Medium_Stalagmite_2
+      name: Caves_Props_19
       rect:
         serializedVersion: 2
         x: 121
@@ -666,14 +666,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87db2860f9302e170800000000000000
-      internalID: 8206125452566379896
+      spriteID: fc9f63e08d161ac43bcaaad64bfd57cb
+      internalID: -1365114488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brown_Small_Stalagmite_0
+      name: Caves_Props_20
       rect:
         serializedVersion: 2
         x: 9
@@ -688,20 +688,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d202f9f46a64d60800000000000000
-      internalID: 7874163859406204200
+      spriteID: e13b7162562ff2f40b004c81f76c9024
+      internalID: -1263891276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkullSpear_Straight_0
+      name: Caves_Props_21
       rect:
         serializedVersion: 2
         x: 25
         y: 50
         width: 7
-        height: 20
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,14 +710,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffb9c13063456b440800000000000000
-      internalID: 4951237431297612799
+      spriteID: 32edff82c92220b4d8bc5fe11cff503e
+      internalID: 1415264811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Yellow_Small_Stalagmite_0
+      name: Caves_Props_22
       rect:
         serializedVersion: 2
         x: 89
@@ -732,14 +732,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4758ff45cc7604140800000000000000
-      internalID: 4701872138271819124
+      spriteID: 9e0d74a0e922ec540881b9cde9a26b0a
+      internalID: -93786851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkullSpear_Left
+      name: Caves_Props_23
       rect:
         serializedVersion: 2
         x: 8
@@ -754,14 +754,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e12a984eb96424100800000000000000
-      internalID: 90712577868931614
+      spriteID: a3f95045a3b890c4b8fb837c3f707891
+      internalID: 978908468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkullSpear_Straight_1
+      name: Caves_Props_24
       rect:
         serializedVersion: 2
         x: 41
@@ -776,14 +776,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c8091f79c9bed60800000000000000
-      internalID: 7920596546067926029
+      spriteID: 94651dc0d62dc1443a3cab059e6e39aa
+      internalID: 1873759094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkullSpear_Right
+      name: Caves_Props_25
       rect:
         serializedVersion: 2
         x: 56
@@ -798,14 +798,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df950567263a8eeb0800000000000000
-      internalID: -4690319368619271683
+      spriteID: 063b43ac0bcc9294ba5fa26ac250cab1
+      internalID: 1314815699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkullPile
+      name: Caves_Props_26
       rect:
         serializedVersion: 2
         x: 73
@@ -820,14 +820,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c97fb66a5c2a5150800000000000000
-      internalID: 5862046631758625222
+      spriteID: b7cf5c455f5c2724c81442a8744e97a1
+      internalID: -41518927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skull_Left
+      name: Caves_Props_27
       rect:
         serializedVersion: 2
         x: 97
@@ -842,14 +842,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10ad8aea4c486cf00800000000000000
-      internalID: 1136741936236386817
+      spriteID: e71bf15006c91da47bdbc4020943f0d3
+      internalID: -534815051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skull_Right
+      name: Caves_Props_28
       rect:
         serializedVersion: 2
         x: 113
@@ -864,19 +864,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b796fc1725a140320800000000000000
-      internalID: 2523170632633379195
+      spriteID: ca88ea78d929200429a04f0091cf7ebd
+      internalID: -1955589846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blood_Pentagram
+      name: Caves_Props_29
       rect:
         serializedVersion: 2
         x: 10
         y: 26
-        width: 22
+        width: 28
         height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -886,19 +886,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 993a913a9b3cd32f0800000000000000
-      internalID: -991421140878908519
+      spriteID: ed73f3559df03f64793d81c19c9b9984
+      internalID: 502188797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ritualistic_Blood_Circle
+      name: Caves_Props_30
       rect:
         serializedVersion: 2
-        x: 32
+        x: 37
         y: 24
-        width: 24
+        width: 19
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -908,14 +908,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac50a194ebff6fa0800000000000000
-      internalID: -5805144435542958930
+      spriteID: 78532764cc50c744d989311e557c4f40
+      internalID: -831220629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blood_Circle
+      name: Caves_Props_31
       rect:
         serializedVersion: 2
         x: 61
@@ -930,14 +930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96852981dc576fc10800000000000000
-      internalID: 2086985001073793129
+      spriteID: accaad2a15925db4e99e0b4406ff8963
+      internalID: -42305995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Large_Red
+      name: Caves_Props_32
       rect:
         serializedVersion: 2
         x: 9
@@ -952,14 +952,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f10278a8f9772680800000000000000
-      internalID: -8779914839650598415
+      spriteID: 346a735d11a63fb488b36e351a20bac0
+      internalID: 333450975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Large_Blue
+      name: Caves_Props_33
       rect:
         serializedVersion: 2
         x: 33
@@ -974,14 +974,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6358d16b3cc907d0800000000000000
-      internalID: -2951603525347945620
+      spriteID: 47a5aeb86a869954bb8a284db30d7d32
+      internalID: 1440638934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Large_Green
+      name: Caves_Props_34
       rect:
         serializedVersion: 2
         x: 57
@@ -996,14 +996,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe34b617a9519cad0800000000000000
-      internalID: -2681588350050417681
+      spriteID: 2df850953e68c294091f71625a6d22f2
+      internalID: 1292602180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Medium_Red
+      name: Caves_Props_35
       rect:
         serializedVersion: 2
         x: 76
@@ -1018,14 +1018,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91c0c1bdfcaab4040800000000000000
-      internalID: 4632984451391687705
+      spriteID: 0b07429253772f4408f64d894d2f2769
+      internalID: -1284961703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Medium_Blue
+      name: Caves_Props_36
       rect:
         serializedVersion: 2
         x: 93
@@ -1040,14 +1040,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22a5195f820e60f00800000000000000
-      internalID: 1082799226952440354
+      spriteID: cf528aaba552b744786dd23a69c1abf6
+      internalID: 963130963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Medium_Green
+      name: Caves_Props_37
       rect:
         serializedVersion: 2
         x: 109
@@ -1062,14 +1062,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5ae859b8adc460c0800000000000000
-      internalID: -4583312396208510370
+      spriteID: 9ea31c04d04566f41a206bd102858f59
+      internalID: -2025824859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Small_Red
+      name: Caves_Props_38
       rect:
         serializedVersion: 2
         x: 128
@@ -1084,14 +1084,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c63282db7fb554a0800000000000000
-      internalID: -6605162739935332669
+      spriteID: b7fe9611976c9ea48997a67f4ede0a84
+      internalID: -1299825030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Small_Blue
+      name: Caves_Props_39
       rect:
         serializedVersion: 2
         x: 144
@@ -1106,14 +1106,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 436210019c2b52bb0800000000000000
-      internalID: -4961362837852051916
+      spriteID: cdff80b832dcb1440a81c7ca8173d43c
+      internalID: -1740368097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crytsal_Small_Green
+      name: Caves_Props_40
       rect:
         serializedVersion: 2
         x: 160
@@ -1128,52 +1128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28ac0fe09412048f0800000000000000
-      internalID: -558409756126950782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Brown_Small_Stalagmite_1
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 74
-        width: 5
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f2a660eb779259b0800000000000000
-      internalID: -5092841670301015303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Small_Stalagmite_1
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 74
-        width: 5
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a35d73493c127cc0800000000000000
-      internalID: -3714875710356237400
+      spriteID: 59e33f4dd5b117c498690971d726b6bd
+      internalID: -1027070292
       vertices: []
       indices: 
       edges: []
@@ -1190,51 +1146,53 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Blood_Circle: 2086985001073793129
-      Blood_Pentagram: -991421140878908519
-      Brown_Column_0: 2446128977128713750
-      Brown_Column_1: 2738303380643629756
-      Brown_Column_2: -8773984377726514618
-      Brown_Column_3: -4268472613960395428
-      Brown_Large_Stalagmite_0: 928751198601444362
-      Brown_Large_Stalagmite_1: 2823709216585826781
-      Brown_Large_Stalagmite_2: -8900489995794255275
-      Brown_Medium_Stalagmite_0: 976860497142651742
-      Brown_Medium_Stalagmite_1: 4132289963616751118
-      Brown_Medium_Stalagmite_2: 3449905868468497368
-      Brown_Small_Stalagmite_0: 7874163859406204200
-      Brown_Small_Stalagmite_1: -5092841670301015303
-      Crytsal_Large_Blue: -2951603525347945620
-      Crytsal_Large_Green: -2681588350050417681
-      Crytsal_Large_Red: -8779914839650598415
-      Crytsal_Medium_Blue: 1082799226952440354
-      Crytsal_Medium_Green: -4583312396208510370
-      Crytsal_Medium_Red: 4632984451391687705
-      Crytsal_Small_Blue: -4961362837852051916
-      Crytsal_Small_Green: -558409756126950782
-      Crytsal_Small_Red: -6605162739935332669
-      Ritualistic_Blood_Circle: -5805144435542958930
-      SkullPile: 5862046631758625222
-      SkullSpear_Left: 90712577868931614
-      SkullSpear_Right: -4690319368619271683
-      SkullSpear_Straight_0: 4951237431297612799
-      SkullSpear_Straight_1: 7920596546067926029
-      Skull_Left: 1136741936236386817
-      Skull_Right: 2523170632633379195
-      Yellow_Column_0: -2489424363505251165
-      Yellow_Column_1: -5783625899798798193
-      Yellow_Column_2: -1027164613770177727
-      Yellow_Column_3: -7959391031641904438
-      Yellow_Large_Stalagmite_0: -296938046296057557
-      Yellow_Large_Stalagmite_1: -8021647886765210120
-      Yellow_Large_Stalagmite_2: 702574339433227999
-      Yellow_Medium_Stalagmite_0: -3069077714421509307
-      Yellow_Medium_Stalagmite_1: -4299053766156920440
-      Yellow_Medium_Stalagmite_2: 8206125452566379896
-      Yellow_Small_Stalagmite_0: 4701872138271819124
-      Yellow_Small_Stalagmite_1: -3714875710356237400
+      Caves_Props_0: -914872771
+      Caves_Props_1: 1408923768
+      Caves_Props_10: 864328099
+      Caves_Props_11: -598070135
+      Caves_Props_12: 189972884
+      Caves_Props_13: -980568173
+      Caves_Props_14: -950422821
+      Caves_Props_15: -1274405098
+      Caves_Props_16: 1958137084
+      Caves_Props_17: 1661639356
+      Caves_Props_18: -1769947211
+      Caves_Props_19: -1365114488
+      Caves_Props_2: 1380025632
+      Caves_Props_20: -1263891276
+      Caves_Props_21: 1415264811
+      Caves_Props_22: -93786851
+      Caves_Props_23: 978908468
+      Caves_Props_24: 1873759094
+      Caves_Props_25: 1314815699
+      Caves_Props_26: -41518927
+      Caves_Props_27: -534815051
+      Caves_Props_28: -1955589846
+      Caves_Props_29: 502188797
+      Caves_Props_3: 1646718437
+      Caves_Props_30: -831220629
+      Caves_Props_31: -42305995
+      Caves_Props_32: 333450975
+      Caves_Props_33: 1440638934
+      Caves_Props_34: 1292602180
+      Caves_Props_35: -1284961703
+      Caves_Props_36: 963130963
+      Caves_Props_37: -2025824859
+      Caves_Props_38: -1299825030
+      Caves_Props_39: -1740368097
+      Caves_Props_4: 1032721233
+      Caves_Props_40: -1027070292
+      Caves_Props_5: 599056663
+      Caves_Props_6: -567301889
+      Caves_Props_7: 1097841335
+      Caves_Props_8: -181044033
+      Caves_Props_9: 23645664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
