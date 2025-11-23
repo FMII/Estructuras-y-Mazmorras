@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - camino1
+  - camino2
+  - camino3
   layers:
   - Default
   - TransparentFX

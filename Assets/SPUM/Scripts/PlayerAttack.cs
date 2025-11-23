@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -7,6 +8,10 @@ public class PlayerAttack : MonoBehaviour
     public float rangoAtaque = 1.5f;
     public LayerMask capaEnemigos;
     public Transform puntoAtaque; // Punto desde donde se detecta el ataque (opcional)
+
+    void Start()
+    {
+    }
 
     void Update()
     {
@@ -40,5 +45,21 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.color = Color.red;
         Vector3 pos = puntoAtaque != null ? puntoAtaque.position : transform.position;
         Gizmos.DrawWireSphere(pos, rangoAtaque);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("camino1"))
+        {
+            SceneManager.LoadScene(1);
+        }
+        else if (collision.gameObject.CompareTag("camino2"))
+        {
+            SceneManager.LoadScene(2);
+        }
+        else if (collision.gameObject.CompareTag("camino3"))
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 }
