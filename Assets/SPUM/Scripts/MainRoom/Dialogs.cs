@@ -14,6 +14,8 @@ public class Dialogs : MonoBehaviour
         {
             "Bienvenido a la Masmorra", 
             "Has caido en lo mas temido sin saber del estudiante promedio", 
+            "Frente a ti te encontraras con 3 puertas, cada una te llevara a un camino diferente",
+            "Tendras que completar secuencialmente de izquierda a derecha cada uno de los caminos",
             "Estructuras y mas estructuras te abordaran en esta rebuscada aventura",
             "En el camino te encontraras con una serie de desafios logicos y uno que otro enemigo",
             "Pero no temas, manten la calma y sigue adelante, esto se lleva bastante facil analizando",
