@@ -43,6 +43,9 @@ public class DoorTeleport : MonoBehaviour
 
     void Update()
     {
+        // Ignorar inputs si hay diálogos activos
+        if (Dialogs.dialogActive) return;
+        
         if (jugadorCerca && Input.GetKeyDown(teclaTeletransporte))
         {
             Teletransportar();

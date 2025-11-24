@@ -250,8 +250,8 @@ Transform:
   m_GameObject: {fileID: 109940842}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.88, y: 33.54, z: 0}
-  m_LocalScale: {x: 1, y: 2.3125, z: 1}
+  m_LocalPosition: {x: -12.91, y: 33.08, z: 0}
+  m_LocalScale: {x: 2.85, y: 2.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -497,7 +497,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 9b0b3b9c33a071d449c5cd67d0d3a491, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.309
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -712,8 +712,8 @@ Transform:
   m_GameObject: {fileID: 757304097}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.91, y: 33.55, z: 0}
-  m_LocalScale: {x: 1, y: 2.3125, z: 1}
+  m_LocalPosition: {x: -6.88, y: 32.93, z: 0}
+  m_LocalScale: {x: 1.6625, y: 2.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1245,8 +1245,8 @@ Transform:
   m_GameObject: {fileID: 1344375205}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.88, y: 33.91, z: 0}
-  m_LocalScale: {x: 1, y: 2.3125, z: 1}
+  m_LocalPosition: {x: -0.91, y: 33.25, z: 0}
+  m_LocalScale: {x: 1.775, y: 2.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1343,9 +1343,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3f58710533cac4a86856444ab17d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teletransportation
-  camino1: {fileID: 109940842}
-  camino2: {fileID: 757304097}
-  camino3: {fileID: 1344375205}
+--- !u!114 &1708287977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708287973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 463fbd35e9611cf44bd714eb48f0da1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Room
+  camino_id: 0
+  puerta1: {fileID: 109940842}
+  puerta2: {fileID: 757304097}
+  puerta3: {fileID: 1344375205}
 --- !u!1001 &1771596910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1405,6 +1418,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3078285967583173469, guid: d7e05c5e6f4713b42b5c80bd42259008, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1708287976}
+    - targetCorrespondingSourceObject: {fileID: 3078285967583173469, guid: d7e05c5e6f4713b42b5c80bd42259008, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1708287977}
   m_SourcePrefab: {fileID: 100100000, guid: d7e05c5e6f4713b42b5c80bd42259008, type: 3}
 --- !u!1 &1793805032
 GameObject:
