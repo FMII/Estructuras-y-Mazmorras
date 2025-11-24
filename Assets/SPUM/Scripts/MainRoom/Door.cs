@@ -8,8 +8,6 @@ public class Door : MonoBehaviour
     public GameObject puerta;
     public int to_camino_id;    
     private int camino_id;
-    
-    [Header("Sistema de Mensajes")]
     public TextMeshProUGUI mensajeText;
     public GameObject panelMensaje;
     
