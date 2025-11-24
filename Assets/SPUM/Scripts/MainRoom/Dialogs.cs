@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using SQLite4Unity3d;
+using System.Collections.Generic;
 
 public class Dialogs : MonoBehaviour
 {
@@ -8,24 +10,50 @@ public class Dialogs : MonoBehaviour
     public Image dialogBox;
     public string[] dialogs;
     private int currentDialogIndex = 0;
+
     void Start()
     {
-        dialogs = new string[]
-        {
-            "Bienvenido a la Masmorra", 
-            "Has caido en lo mas temido sin saber del estudiante promedio", 
-            "Frente a ti te encontraras con 3 puertas, cada una te llevara a un camino diferente",
-            "Tendras que completar secuencialmente de izquierda a derecha cada uno de los caminos",
-            "Estructuras y mas estructuras te abordaran en esta rebuscada aventura",
-            "En el camino te encontraras con una serie de desafios logicos y uno que otro enemigo",
-            "Pero no temas, manten la calma y sigue adelante, esto se lleva bastante facil analizando",
-            "Sin mas te deseo una buena suerte"
-        };
+        LoadDialogsFromDB();
         
-        if (dialogText != null && dialogs.Length > 0)
+        if (dialogText != null && dialogs != null && dialogs.Length > 0)
         {
             dialogText.text = dialogs[currentDialogIndex];
         }
+    }
+
+    void LoadDialogsFromDB()
+    {
+        string dbPath = System.IO.Path.Combine(Application.streamingAssetsPath, "juegointegradora.db");
+        
+        try
+        {
+            var db = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadOnly);
+            var query = "SELECT d.texto FROM dialogos d JOIN camino_sala_dialogos csd ON d.id = csd.dialogo_id JOIN camino_sala cs ON csd.camino_sala_id = cs.id WHERE cs.camino_id = 0";
+            var results = db.Query<DialogoRow>(query);
+            
+            var dialogList = new List<string>();
+            foreach (var row in results)
+            {
+                dialogList.Add(row.texto);
+            }
+            dialogs = dialogList.ToArray();
+            
+            db.Close();
+            Debug.Log("Dialogos cargados desde DB: " + dialogs.Length);
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError("Error cargando dialogos desde DB: " + ex.Message);
+            // Fallback a dialogos por defecto
+            dialogs = new string[] 
+            { "Bienvenido al juego.", "Este es un dialogo de prueba.", "Disfruta jugando!"
+            };
+        }
+    }
+
+    public class DialogoRow
+    {
+        public string texto { get; set; }
     }
 
     // Update is called once per frame
