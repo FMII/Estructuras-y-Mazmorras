@@ -49,17 +49,5 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("camino1"))
-        {
-            SceneManager.LoadScene(1);
-        }
-        else if (collision.gameObject.CompareTag("camino2"))
-        {
-            SceneManager.LoadScene(2);
-        }
-        else if (collision.gameObject.CompareTag("camino3"))
-        {
-            SceneManager.LoadScene(3);
-        }
     }
 }

@@ -28,6 +28,9 @@ public class PlayerMoveTopDown : MonoBehaviour
 
     void Update()
     {
+        // Ignorar inputs si hay diálogos activos
+        if (Dialogs.dialogActive) return;
+        
         // Si está recibiendo daño, no hacer nada
         if (isDamaged)
             return;

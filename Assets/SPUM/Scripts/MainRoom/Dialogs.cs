@@ -10,10 +10,12 @@ public class Dialogs : MonoBehaviour
     public Image dialogBox;
     public string[] dialogs;
     private int currentDialogIndex = 0;
+    public static bool dialogActive = false;
 
     void Start()
     {
         LoadDialogsFromDB();
+        dialogActive = true;
         
         if (dialogText != null && dialogs != null && dialogs.Length > 0)
         {
@@ -44,10 +46,6 @@ public class Dialogs : MonoBehaviour
         catch (System.Exception ex)
         {
             Debug.LogError("Error cargando dialogos desde DB: " + ex.Message);
-            // Fallback a dialogos por defecto
-            dialogs = new string[] 
-            { "Bienvenido al juego.", "Este es un dialogo de prueba.", "Disfruta jugando!"
-            };
         }
     }
 
@@ -74,6 +72,7 @@ public class Dialogs : MonoBehaviour
                 if (dialogBox != null) dialogBox.gameObject.SetActive(false);
                 if (continueText != null) continueText.gameObject.SetActive(false);
                 if (dialogText != null) dialogText.gameObject.SetActive(false);
+                dialogActive = false;
             }
         }
         
