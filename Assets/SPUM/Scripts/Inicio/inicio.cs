@@ -28,7 +28,7 @@ public class inicio : MonoBehaviour
     public void BotonNewGame()
     {
         PlayerPrefs.SetInt("num_vidas", 3);
-        PlayerPrefs.SetInt("camino_id", 0);
+        PlayerPrefs.SetInt("camino_id", 1);
         SceneManager.LoadScene(0);
     }
 
@@ -40,7 +40,7 @@ public class inicio : MonoBehaviour
         }
         else
         {
-            PlayerPrefs.SetInt("num_vidas", 3);
+            PlayerPrefs.SetInt("camino_id", 1);
             SceneManager.LoadScene(0);
         }
     }
