@@ -30,6 +30,7 @@ public class Door : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Camino actual: " + camino_id + ", Camino destino: " + to_camino_id);
             if (camino_id == to_camino_id)
             {
                 SceneManager.LoadScene(to_camino_id);
