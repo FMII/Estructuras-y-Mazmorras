@@ -9,22 +9,29 @@ public class EnemyAI : MonoBehaviour
     public float rangoDeteccion = 5f;
     public float rangoAtaque = 1.5f;
     public float tiempoEntreAtaques = 1.5f;
+    public float delayPrimerAtaque = 1f;
     public int danioAtaque = 10;
     
     [Header("Referencias")]
     public Transform jugador;
     public LayerMask capaJugador;
 
+    public int order = 0;
+
     private Rigidbody2D rb;
     private SPUM_Prefabs spum;
+    private HealthSystem healthSystem;
     private float tiempoProximoAtaque;
     private bool estaAtacando = false;
+    private bool primerAtaqueRealizado = false;
+    private bool estaMuerto = false;
     private Vector2 direccionMovimiento;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spum = GetComponent<SPUM_Prefabs>();
+        healthSystem = GetComponent<HealthSystem>();
         
         // Inicializar animaciones
         spum.PopulateAnimationLists();
@@ -39,19 +46,52 @@ public class EnemyAI : MonoBehaviour
                 jugador = playerObj.transform;
             }
         }
+        
+        // Subscribirse al evento de muerte
+        if (healthSystem != null)
+        {
+            healthSystem.onDeath.AddListener(OnMuerte);
+        }
+        
+        // Configurar delay inicial para el primer ataque
+        tiempoProximoAtaque = Time.time + delayPrimerAtaque;
+    }
+    
+    void OnMuerte()
+    {
+        estaMuerto = true;
+        direccionMovimiento = Vector2.zero;
+        
+        // Desactivar el Rigidbody2D para que no se mueva más
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.simulated = false;
+        }
+        
+        // Desactivar este script
+        this.enabled = false;
     }
 
     void Update()
     {
-        if (jugador == null || estaAtacando)
+        if (jugador == null || estaAtacando || estaMuerto)
             return;
 
         float distanciaAlJugador = Vector2.Distance(transform.position, jugador.position);
 
         // Si el jugador está dentro del rango de ataque
-        if (distanciaAlJugador <= rangoAtaque && Time.time >= tiempoProximoAtaque)
+        if (distanciaAlJugador <= rangoAtaque)
         {
-            Atacar();
+            // Detenerse y quedarse quieto
+            direccionMovimiento = Vector2.zero;
+            spum.PlayAnimation(PlayerState.IDLE, 0);
+            
+            // Atacar si ya pasó el tiempo de cooldown
+            if (Time.time >= tiempoProximoAtaque)
+            {
+                Atacar();
+            }
         }
         // Si el jugador está dentro del rango de detección pero fuera del rango de ataque
         else if (distanciaAlJugador <= rangoDeteccion)
@@ -78,7 +118,7 @@ public class EnemyAI : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!estaAtacando)
+        if (!estaAtacando && !estaMuerto)
         {
             rb.MovePosition(rb.position + direccionMovimiento * velocidadMovimiento * Time.fixedDeltaTime);
         }
