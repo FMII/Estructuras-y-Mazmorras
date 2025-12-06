@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class DoorTeleport : MonoBehaviour
 {
@@ -12,8 +13,50 @@ public class DoorTeleport : MonoBehaviour
     [Header("Visual (Opcional)")]
     public GameObject indicadorPresionaE;
 
+    [Header("UI (Opcional)")]
+    public GameObject canvasDoor; // Objeto del canvas que muestra el mensaje
+    public TextMeshProUGUI mensajeText;
+    public GameObject panelMensaje;
+    [Header("Comportamiento")]
+    [Tooltip("Si está activado, mostrar el mensaje bloqueará inputs globales usando Dialogs.dialogActive")] 
+    public bool bloquearInputsAlMostrar = false;
+
     private bool jugadorCerca = false;
     private GameObject jugador;
+
+    void Start()
+    {
+        // Asegurarse de que el canvasDoor esté desactivado al inicio
+        if (canvasDoor != null)
+        {
+            canvasDoor.SetActive(false);
+        }
+    }
+
+    void MostrarMensaje(string mensaje)
+    {
+        // Cancelar cualquier ocultado pendiente y mostrar el panel hasta que el jugador salga
+        CancelInvoke("OcultarMensaje");
+
+        if (mensajeText != null)
+            mensajeText.text = mensaje;
+
+        if (panelMensaje != null)
+            panelMensaje.SetActive(true);
+
+        // Opcional: bloquear inputs globales si el diseñador lo quiere
+        if (bloquearInputsAlMostrar)
+            Dialogs.dialogActive = true;
+    }
+
+    void OcultarMensaje()
+    {
+        if (panelMensaje != null)
+            panelMensaje.SetActive(false);
+
+        if (bloquearInputsAlMostrar)
+            Dialogs.dialogActive = false;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,7 +67,9 @@ public class DoorTeleport : MonoBehaviour
             
             if (indicadorPresionaE != null)
                 indicadorPresionaE.SetActive(true);
-                
+
+            MostrarMensaje("Presiona [E] para entrar");
+
             Debug.Log("Presiona [E] para entrar");
         }
     }
@@ -38,6 +83,8 @@ public class DoorTeleport : MonoBehaviour
             
             if (indicadorPresionaE != null)
                 indicadorPresionaE.SetActive(false);
+
+            OcultarMensaje();
         }
     }
 
