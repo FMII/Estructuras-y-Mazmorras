@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -99,8 +100,22 @@ public class HealthSystem : MonoBehaviour
 
         onDeath?.Invoke();
 
-        // Destruir después de la animación de muerte
-        Destroy(gameObject, 2f);
+        // Verificar si es el jugador
+        if (gameObject.CompareTag("Player"))
+        {
+            Debug.Log("El jugador ha muerto. Recargando escena...");
+            Invoke("RecargarEscena", 2f);
+        }
+        else
+        {
+            // Destruir enemigo después de la animación de muerte
+            Destroy(gameObject, 2f);
+        }
+    }
+
+    void RecargarEscena()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public bool EstaMuerto()

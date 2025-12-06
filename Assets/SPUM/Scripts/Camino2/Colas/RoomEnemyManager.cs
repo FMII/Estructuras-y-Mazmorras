@@ -13,6 +13,7 @@ public class RoomEnemyManager : MonoBehaviour
     public float tiempoEntreOlas = 6f;
     public int numeroDeOlas = 5;
     public bool generarAlInicio = true;
+    public GameObject playerReferencia;
     
     [Header("Eventos")]
     public UnityEvent onOlaCompletada;
@@ -163,6 +164,13 @@ public class RoomEnemyManager : MonoBehaviour
         salaCompletada = true;
         Debug.Log($"========== ¡SALA COMPLETADA! {numeroDeOlas} OLAS SUPERADAS ==========");
         onTodasLasOlasCompletadas?.Invoke();
+        playerReferencia.transform.position = new Vector2(-58f, -5f);
+        
+        PlayerMoveTopDown playerMove = playerReferencia.GetComponent<PlayerMoveTopDown>();
+        if (playerMove != null)
+        {
+            playerMove.enabled = true;
+        }
     }
 
     public void ReiniciarSala()
