@@ -8,6 +8,8 @@ TagManager:
   - camino2
   - camino3
   - Wall
+  - well
+  - Well
   layers:
   - Default
   - TransparentFX
