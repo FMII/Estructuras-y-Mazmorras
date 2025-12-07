@@ -7,7 +7,10 @@ public class SalaTrigger : MonoBehaviour
     public int salaID;
     
     [Header("Configuración")]
-    public bool soloUnaVez = false;
+    public bool soloUnaVez = true; // Solo activar la primera vez
+    
+    [Header("Sistema de Diálogos")]
+    public DialogosSala sistemaDialogos;
     
     private bool yaActivada = false;
 
@@ -44,6 +47,12 @@ public class SalaTrigger : MonoBehaviour
         PlayerPrefs.SetInt("sala_id", salaID);
         PlayerPrefs.Save();
         Debug.Log($"Sala ID guardado: {salaID}");
+        
+        // Mostrar diálogos de esta sala
+        if (sistemaDialogos != null)
+        {
+            sistemaDialogos.MostrarDialogosDeSala(salaID);
+        }
     }
 
     void OnDrawGizmos()

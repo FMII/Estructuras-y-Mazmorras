@@ -1,0 +1,40 @@
+{
+  "salas": [
+    {
+      "salaID": 1,
+      "nombreSala": "Recursión y Laberintos",
+      "dialogos": [
+        "¡Bienvenido a la Sala de Recursión!",
+        "En esta sala aprenderás sobre RECURSIÓN: cuando una función se llama a sí misma para resolver un problema.",
+        "La recursión es útil para explorar laberintos, donde cada camino se divide en más caminos.",
+        "Tu desafío: Navega por el laberinto. Cada decisión es como una llamada recursiva.",
+        "Recuerda: toda recursión necesita una CONDICIÓN DE PARADA o será infinita.",
+        "¡Adelante! Encuentra la salida del laberinto."
+      ]
+    },
+    {
+      "salaID": 2,
+      "nombreSala": "Arreglos e Índices",
+      "dialogos": [
+        "¡Bienvenido a la Sala de Arreglos!",
+        "Aquí aprenderás sobre ARREGLOS: colecciones ordenadas de elementos.",
+        "Cada elemento tiene una POSICIÓN llamada ÍNDICE. El primer elemento está en el índice [0].",
+        "Tu desafío: Organiza las cajas en sus posiciones correctas [0], [1], [2], [3], [4].",
+        "Usa la tecla E para agarrar y soltar cajas. Colócalas en los contenedores numerados.",
+        "¡Completa el arreglo correctamente!"
+      ]
+    },
+    {
+      "salaID": 3,
+      "nombreSala": "Tipos Genéricos",
+      "dialogos": [
+        "¡Bienvenido a la Sala de Tipos Genéricos!",
+        "Aquí aprenderás sobre GENÉRICOS: clases que funcionan con diferentes tipos de datos.",
+        "Por ejemplo, Caja<Arma> solo acepta armas. Caja<Comida> solo acepta comida.",
+        "Tu desafío: Coloca cada objeto en su caja correcta según el tipo.",
+        "Usa E para recoger objetos y colocarlos. Si el tipo no coincide, la caja lo rechazará.",
+        "¡Completa todas las cajas con los objetos correctos!"
+      ]
+    }
+  ]
+}
