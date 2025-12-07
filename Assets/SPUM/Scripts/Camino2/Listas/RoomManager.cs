@@ -20,6 +20,10 @@ public class RoomManager : MonoBehaviour
     [Header("Referencias UI")]
     public GameObject botonConfirmar;
     
+    [Header("Referencias")]
+    public Transform player;
+    public Vector2 posicionFinal = new Vector2(-13f, -40f);
+    
     [Header("Debug")]
     public List<DiamondColor> secuenciaActual = new List<DiamondColor>();
     public bool puzzleCompletado = false;
@@ -40,6 +44,16 @@ public class RoomManager : MonoBehaviour
 
     void Start()
     {
+        // Buscar al jugador si no está asignado
+        if (player == null)
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
+            {
+                player = playerObj.transform;
+            }
+        }
+        
         // Inicializar la secuencia correcta predefinida
         secuenciaCorrecta = new List<DiamondColor>
         {
@@ -160,7 +174,17 @@ public class RoomManager : MonoBehaviour
             botonConfirmar.SetActive(false);
         }
         
-        // Aquí puedes abrir una puerta, activar un teleport, etc.
+        // Mover al jugador a la posición final
+        if (player != null)
+        {
+            player.position = new Vector3(posicionFinal.x, posicionFinal.y, player.position.z);
+            Debug.Log($"Jugador movido a posición: {posicionFinal}");
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró referencia al jugador");
+        }
+        
         Debug.Log("Puzzle completado correctamente");
     }
 

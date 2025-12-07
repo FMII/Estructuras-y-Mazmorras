@@ -164,12 +164,34 @@ public class RoomEnemyManager : MonoBehaviour
         salaCompletada = true;
         Debug.Log($"========== ¡SALA COMPLETADA! {numeroDeOlas} OLAS SUPERADAS ==========");
         onTodasLasOlasCompletadas?.Invoke();
-        playerReferencia.transform.position = new Vector2(-58f, -5f);
         
-        PlayerMoveTopDown playerMove = playerReferencia.GetComponent<PlayerMoveTopDown>();
-        if (playerMove != null)
+        // Mover al jugador después de 2 segundos
+        Invoke("MoverJugadorASalida", 2f);
+    }
+
+    void MoverJugadorASalida()
+    {
+        // Mover al jugador a la posición de salida
+        if (playerReferencia != null)
         {
-            playerMove.enabled = true;
+            playerReferencia.transform.position = new Vector2(39f, -44f);
+            Debug.Log("Jugador movido a la salida (39, -44)");
+            
+            PlayerMoveTopDown playerMove = playerReferencia.GetComponent<PlayerMoveTopDown>();
+            if (playerMove != null)
+            {
+                playerMove.enabled = true;
+            }
+        }
+        else
+        {
+            // Buscar al jugador si no está asignado
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                player.transform.position = new Vector2(39f, -44f);
+                Debug.Log("Jugador movido a la salida (39, -44)");
+            }
         }
     }
 
