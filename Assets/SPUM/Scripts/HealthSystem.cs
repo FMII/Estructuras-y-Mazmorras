@@ -108,6 +108,14 @@ public class HealthSystem : MonoBehaviour
         }
         else
         {
+            // Notificar al sistema de conjuntos si este enemigo pertenece a él
+            ConjuntosEnemy conjuntosEnemy = GetComponent<ConjuntosEnemy>();
+            if (conjuntosEnemy != null)
+            {
+                conjuntosEnemy.OnDeath();
+                return; // ConjuntosEnemy.OnDeath() ya destruye el objeto
+            }
+            
             // Destruir enemigo después de la animación de muerte
             Destroy(gameObject, 2f);
         }

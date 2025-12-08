@@ -16,28 +16,31 @@
     },
     {
       "salaID": 2,
-      "nombreSala": "Colas",
+      "nombreSala": "Conjuntos",
       "dialogos": [
-        "¡Bienvenido a la Sala de Colas!",
-        "Aquí aprenderás sobre COLAS: colecciones ordenadas de elementos donde el primero en entrar es el primero en salir.",
-        "Puedes ENCOLAR elementos al final y DESENCOLAR elementos desde el frente.",
-        "Tu desafío: Elimina a los enemigos invocados por las estatuas frente a ti en el orden correcto.",
-        "Si no los eliminas en el orden correcto, volverán a aparecer.",
-        "Elimina a todas las ordas de enemigos siguiendo el orden de invocación.",
-        "¡Concluye con la cola en el orden correcto!"
+        "¡Bienvenido a la Sala de Conjuntos!",
+        " Aquí aprenderás sobre Conjuntos: colecciones de elementos únicos sin un orden específico.",
+        "Puedes REALIZAR operaciones como UNIÓN, 2 conjuntos se combinan.",
+        "INTERSECCIÓN, solo los elementos comunes permanecen.",
+        "DIFERENCIA, los elementos de un conjunto que no están en el otro.",
+        "Tu desafío: En esta sala hay diferentes habitaciones con enemigos que representan conjuntos.",
+        "Los enemigos azules representan el conjunto A , los enemigos rojos el conjunto B y los enemigos morados la interseccion.",
+        "Elimina a los enemigos segun tu mision de conjunto.",
+        "Si lo logras correctamente, podrás avanzar.",
+        "¡Agrupa a los enemigos y no te equivoques!"
       ]
     },
     {
       "salaID": 3,
-      "nombreSala": "Pilas",
+      "nombreSala": "Diccionarios",
       "dialogos": [
-        "¡Bienvenido a la Sala de Pilas!",
-        "Aquí aprenderás sobre PILAS: colecciones donde el último en entrar es el primero en salir.",
-        "Puedes APILAR elementos en la cima y DESEMPILAR elementos desde la cima.",
-        "Manten el click izquierdo sobre los bloques abajo de ti para moverlos y arrojalos al pozo arriba tuyo.",
-        "Si logras apilar los bloques en el orden correcto, llegaras a la cima.",
-        "Los verdes prados sobre el cafe suelo fertil son rodeados de el infinito mar azul, el sol ilumina a todos estos cayendo asi sobre su fin.",
-        "¡Recuerda el hermoso poema de antes!"
+        "¡Bienvenido a la Sala de Diccionarios!",
+        "Aquí aprenderás sobre DICCIONARIOS: colecciones de pares clave-valor donde cada clave es única.",
+        "Puedes AGREGAR, ELIMINAR y BUSCAR elementos rápidamente usando sus claves.",
+        "Recoge los objetos que encuentres en la sala y llevalos a la estatua.",
+        "Cada objeto tiene un valor asignado.",
+        "De tu suerte depende si la llave te da enemigos o la salida",
+        "¡Recoge esas llaves!"
       ]
     }
   ]

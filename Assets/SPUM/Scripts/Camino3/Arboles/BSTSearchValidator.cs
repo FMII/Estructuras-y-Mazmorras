@@ -23,9 +23,20 @@ public class BSTSearchValidator : MonoBehaviour
     
     [Header("Referencias a Bloques (para marcar)")]
     public BSTBlock[] todosLosBloques;
+    
+    [Header("Teleport al Completar")]
+    public Vector2 posicionFinal = new Vector2(104f, -1f);
+    private Transform jugador;
 
     void Start()
     {
+        // Buscar al jugador
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            jugador = playerObj.transform;
+        }
+        
         ActualizarUI();
         MarcarBloqueObjetivo();
     }
@@ -91,6 +102,17 @@ public class BSTSearchValidator : MonoBehaviour
     {
         MostrarFeedback("🎉 ¡JUEGO COMPLETADO! Has practicado búsqueda en BST correctamente", Color.cyan);
         ActualizarUI();
+        
+        // Mover al jugador a la posición final
+        if (jugador != null)
+        {
+            jugador.position = new Vector3(posicionFinal.x, posicionFinal.y, jugador.position.z);
+            Debug.Log($"Jugador movido a posición final: {posicionFinal}");
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró el jugador para moverlo");
+        }
     }
 
     void ActualizarUI()

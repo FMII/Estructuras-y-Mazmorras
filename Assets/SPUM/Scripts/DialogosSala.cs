@@ -136,10 +136,7 @@ public class DialogosSala : MonoBehaviour
         dialogosActivos = false;
         Dialogs.dialogActive = false; // Desbloquear movimiento
         
-        // Ocultar canvas
-        if (canvasDialogos != null)
-            canvasDialogos.SetActive(false);
-        
+        // Solo ocultar los elementos de diálogo, NO el canvas completo
         if (dialogBox != null)
             dialogBox.gameObject.SetActive(false);
         

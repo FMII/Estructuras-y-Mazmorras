@@ -5,7 +5,7 @@ public class PlayerAttack : MonoBehaviour
 {
     [Header("Configuración de Ataque")]
     public int danioAtaque = 20;
-    public float rangoAtaque = 1.5f;
+    public float rangoAtaque;
     public LayerMask capaEnemigos;
     public Transform puntoAtaque; // Punto desde donde se detecta el ataque (opcional)
 
@@ -22,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
     public void RealizarAtaque()
     {
         // Usar la posición del jugador o un punto de ataque específico
-        Vector2 posicionAtaque = puntoAtaque != null ? puntoAtaque.position : transform.position;
+        Vector2 posicionAtaque = puntoAtaque != null ? puntoAtaque.position : (Vector2)transform.position + Vector2.up * 0.3f;
 
         // Detectar enemigos en rango
         Collider2D[] enemigosGolpeados = Physics2D.OverlapCircleAll(posicionAtaque, rangoAtaque, capaEnemigos);
@@ -43,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
     {
         // Visualizar rango de ataque en el editor
         Gizmos.color = Color.red;
-        Vector3 pos = puntoAtaque != null ? puntoAtaque.position : transform.position;
+        Vector3 pos = puntoAtaque != null ? puntoAtaque.position : transform.position + Vector3.up * 0.3f;
         Gizmos.DrawWireSphere(pos, rangoAtaque);
     }
 

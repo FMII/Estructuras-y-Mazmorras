@@ -78,7 +78,8 @@ public class EnemyAI : MonoBehaviour
         if (jugador == null || estaAtacando || estaMuerto)
             return;
 
-        float distanciaAlJugador = Vector2.Distance(transform.position, jugador.position);
+        Vector2 posicionAtaque = (Vector2)transform.position + Vector2.up * 0.3f;
+        float distanciaAlJugador = Vector2.Distance(posicionAtaque, jugador.position);
 
         // Si el jugador está dentro del rango de ataque
         if (distanciaAlJugador <= rangoAtaque)
@@ -167,12 +168,14 @@ public class EnemyAI : MonoBehaviour
     // Dibujar gizmos para visualizar rangos en el editor
     void OnDrawGizmosSelected()
     {
+        Vector3 posicionAtaque = transform.position + Vector3.up * 0.3f;
+        
         // Rango de detección
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, rangoDeteccion);
+        Gizmos.DrawWireSphere(posicionAtaque, rangoDeteccion);
         
         // Rango de ataque
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, rangoAtaque);
+        Gizmos.DrawWireSphere(posicionAtaque, rangoAtaque);
     }
 }

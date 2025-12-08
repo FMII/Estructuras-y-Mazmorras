@@ -7661,8 +7661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   velocidadMovimiento: 2
-  rangoDeteccion: 10
-  rangoAtaque: 1
+  rangoDeteccion: 5
+  rangoAtaque: 0.5
   tiempoEntreAtaques: 5
   delayPrimerAtaque: 3
   danioAtaque: 5
