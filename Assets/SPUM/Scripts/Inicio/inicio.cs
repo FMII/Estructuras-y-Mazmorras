@@ -29,19 +29,19 @@ public class inicio : MonoBehaviour
     {
         PlayerPrefs.SetInt("num_vidas", 3);
         PlayerPrefs.SetInt("camino_id", 1);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void BotonContinue()
     {
         if (PlayerPrefs.HasKey("camino_id"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         else
         {
             PlayerPrefs.SetInt("num_vidas", 3);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 

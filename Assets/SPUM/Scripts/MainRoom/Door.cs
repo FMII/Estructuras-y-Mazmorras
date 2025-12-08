@@ -13,7 +13,7 @@ public class Door : MonoBehaviour
     
     void Start()
     {
-        camino_id = PlayerPrefs.GetInt("camino_id", 1);
+        camino_id = PlayerPrefs.GetInt("camino_id", 2);
         
         // Asegurarse de que el panel esté oculto al inicio
         if (panelMensaje != null)
@@ -33,7 +33,9 @@ public class Door : MonoBehaviour
             Debug.Log("Camino actual: " + camino_id + ", Camino destino: " + to_camino_id);
             if (camino_id == to_camino_id)
             {
-                SceneManager.LoadScene(to_camino_id);
+                // Camino 1 = Escena 2, Camino 2 = Escena 3, Camino 3 = Escena 4
+                int escenaACarga = to_camino_id + 1;
+                SceneManager.LoadScene(escenaACarga);
             }
             else
             {
