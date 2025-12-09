@@ -251,6 +251,7 @@ public class DictionaryRoomManager : MonoBehaviour
 
     void CargarEscenaPrincipal()
     {
+        PlayerPrefs.SetInt("camino_id", 3);
         SceneManager.LoadScene("Main");
     }
 
