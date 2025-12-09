@@ -14,6 +14,8 @@ public class DoorSceneLoader : MonoBehaviour
     public TextMeshProUGUI mensajeText;
     public string mensajePersonalizado = "Cargando...";
 
+    public int caminoIDAlCargar = 0; // ID del camino a establecer al cargar la escena
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -24,6 +26,8 @@ public class DoorSceneLoader : MonoBehaviour
 
     void CargarEscena()
     {
+        PlayerPrefs.SetInt("camino_id", caminoIDAlCargar); 
+        Debug.Log("Estableciendo camino_id a: " + PlayerPrefs.GetInt("camino_id"));
         if (string.IsNullOrEmpty(nombreEscena))
         {
             Debug.LogError("No se especificó el nombre de la escena a cargar");
