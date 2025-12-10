@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 /// <summary>
 /// Puerta que requiere responder un quiz antes de teleportar (Camino 2)
@@ -11,16 +12,29 @@ public class QuizDoorCamino2 : MonoBehaviour
     [Header("Referencias")]
     public QuizManagerCamino2 quizManager;
     
-    [Header("Visual (Opcional)")]
+    [Header("Visual")]
+    public GameObject indicadorPresionaE;
     public SpriteRenderer spriteRenderer;
     public Color colorNormal = Color.cyan;
     public Color colorActivo = Color.yellow;
     
+    [Header("UI (Opcional)")]
+    public GameObject canvasMensaje; // Canvas padre (opcional)
+    public TextMeshProUGUI mensajeText;
+    public string mensajeEntrada = "Presiona [E] para el desafío final";
+    
     private bool jugadorCerca = false;
     private GameObject jugador;
+    private bool preguntaMostrada = false;
 
     void Start()
     {
+        // Desactivar canvas al inicio
+        if (canvasMensaje != null)
+        {
+            canvasMensaje.SetActive(false);
+        }
+        
         // Buscar el QuizManager si no está asignado
         if (quizManager == null)
         {
@@ -45,7 +59,10 @@ public class QuizDoorCamino2 : MonoBehaviour
 
     void Update()
     {
-        if (jugadorCerca && Input.GetKeyDown(KeyCode.E))
+        // Ignorar inputs si hay diálogos activos
+        if (Dialogs.dialogActive) return;
+        
+        if (jugadorCerca && !preguntaMostrada && Input.GetKeyDown(KeyCode.E))
         {
             ActivarQuiz();
         }
@@ -58,12 +75,39 @@ public class QuizDoorCamino2 : MonoBehaviour
             jugadorCerca = true;
             jugador = other.gameObject;
             
+            Debug.Log("Jugador cerca de QuizDoorCamino2");
+            
+            if (indicadorPresionaE != null)
+            {
+                indicadorPresionaE.SetActive(true);
+                Debug.Log("Indicador activado");
+            }
+            else
+            {
+                Debug.LogWarning("indicadorPresionaE es null!");
+            }
+            
             if (spriteRenderer != null)
             {
                 spriteRenderer.color = colorActivo;
             }
             
-            Debug.Log("Presiona E para responder el quiz y continuar");
+            if (mensajeText != null)
+            {
+                // Activar canvas si existe
+                if (canvasMensaje != null)
+                {
+                    canvasMensaje.SetActive(true);
+                    Debug.Log("Canvas activado");
+                }
+                
+                mensajeText.text = mensajeEntrada;
+                Debug.Log($"Mensaje establecido: {mensajeEntrada}");
+            }
+            else
+            {
+                Debug.LogWarning("mensajeText es null!");
+            }
         }
     }
 
@@ -73,10 +117,22 @@ public class QuizDoorCamino2 : MonoBehaviour
         {
             jugadorCerca = false;
             jugador = null;
+            preguntaMostrada = false;
+            
+            if (indicadorPresionaE != null)
+                indicadorPresionaE.SetActive(false);
             
             if (spriteRenderer != null)
             {
                 spriteRenderer.color = colorNormal;
+            }
+            
+            if (mensajeText != null)
+            {
+                mensajeText.text = "";
+                
+                if (canvasMensaje != null)
+                    canvasMensaje.SetActive(false);
             }
         }
     }
@@ -85,6 +141,7 @@ public class QuizDoorCamino2 : MonoBehaviour
     {
         if (quizManager != null)
         {
+            preguntaMostrada = true;
             Debug.Log("Iniciando quiz de Camino 2...");
             quizManager.MostrarPreguntaAleatoria(this);
         }
@@ -93,7 +150,7 @@ public class QuizDoorCamino2 : MonoBehaviour
             Debug.LogError("No hay QuizManager asignado!");
         }
     }
-
+    
     /// <summary>
     /// Llamado por el QuizManager cuando el jugador responde correctamente
     /// </summary>
@@ -102,7 +159,23 @@ public class QuizDoorCamino2 : MonoBehaviour
         if (jugador != null)
         {
             jugador.transform.position = new Vector3(posicionDestino.x, posicionDestino.y, jugador.transform.position.z);
-            Debug.Log($"Jugador teleportado a {posicionDestino}");
+            
+            // Resetear para que no vuelva a mostrar pregunta
+            jugadorCerca = false;
+            preguntaMostrada = false;
+            
+            if (indicadorPresionaE != null)
+                indicadorPresionaE.SetActive(false);
+                
+            if (mensajeText != null)
+            {
+                mensajeText.text = "";
+                
+                if (canvasMensaje != null)
+                    canvasMensaje.SetActive(false);
+            }
+            
+            Debug.Log($"¡Quiz completado! Teleportado a {posicionDestino}");
         }
         else
         {
